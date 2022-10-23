@@ -1,0 +1,3 @@
+cari tahu berbagai fungsi yang ada di golang
+
+1. strings.Join()
