@@ -1,1 +1,9 @@
 Pelajari tentang package math pada golang
+
+
+Penggunaan Fungsi math.Pow()
+Fungsi math.Pow() digunakan untuk memangkat nilai. math.Pow(a, b) berarti a pangkat b
+
+
+Penggunaan Konstanta math.Pi
+math.Pi adalah konstanta bawaan package math yang merepresentasikan Pi atau 22/7.
