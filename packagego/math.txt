@@ -1,0 +1,1 @@
+Pelajari tentang package math pada golang
