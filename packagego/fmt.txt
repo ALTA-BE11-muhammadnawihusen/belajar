@@ -1,0 +1,7 @@
+
+
+
+
+Penggunaan Fungsi fmt.Sprintf()
+Fungsi fmt.Sprintf() pada dasarnya sama dengan fmt.Printf(), hanya saja fungsi ini tidak menampilkan nilai, melainkan mengembalikan nilainya dalam bentuk string.
+contoh := fmt.Sprintf("%d", suatuint) // maka contoh akan menjadi variabel yang menyimpan data, data akan di tampikan ketika contoh di panggil
