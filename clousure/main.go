@@ -19,8 +19,23 @@ func main() {
 		return min, max
 	}
 
-	tes := []int{1, 4, 6, 89, 6, 3, 463, 3, 2, 11, 0}
+	tes := []int{1, 4, 6, 89, 232, 234, 44, 14, 45, 12, 6, 3, 463, 3, 2, 11, 0}
 	min, max := clousure(tes)
 	fmt.Println("ini adalah nilai min", min)
 	fmt.Println("ini adalah nilai max", max)
+
+	IIFO1, IIFO2 := func(odd int) ([]int, int) {
+		var res []int
+		sum := 0
+		for _, v := range tes {
+			if v%odd == 0 {
+				res = append(res, v)
+				sum += 1
+			}
+		}
+
+		return res, sum
+	}(2)
+
+	fmt.Println("IIFO1 :", IIFO1, "IIFO2 :", IIFO2)
 }
