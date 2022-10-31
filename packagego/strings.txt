@@ -1,3 +1,6 @@
 cari tahu berbagai fungsi yang ada di golang
 
 1. strings.Join()
+
+2. strings.Contains("full", "bagian")
+Inti dari fungsi ini adalah untuk deteksi apakah sebuah substring adalah bagian dari string, jika iya maka akan bernilai true, dan sebaliknya.
