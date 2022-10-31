@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	od := 2
 	clousure := func(arr []int) (int, int) {
 		var max, min int
 		for k, v := range arr {
@@ -35,7 +36,8 @@ func main() {
 		}
 
 		return res, sum
-	}(2)
+	}(od) //kurung di sini bersifat wajib dan akan dijadikan parameter
 
 	fmt.Println("IIFO1 :", IIFO1, "IIFO2 :", IIFO2)
+
 }
