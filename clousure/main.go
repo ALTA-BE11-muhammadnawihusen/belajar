@@ -27,15 +27,13 @@ func main() {
 
 	IIFO1, IIFO2 := func(odd int) ([]int, int) {
 		var res []int
-		sum := 0
 		for _, v := range tes {
 			if v%odd == 0 {
 				res = append(res, v)
-				sum += 1
 			}
 		}
 
-		return res, sum
+		return res, len(res)
 	}(od) //kurung di sini bersifat wajib dan akan dijadikan parameter
 
 	fmt.Println("IIFO1 :", IIFO1, "IIFO2 :", IIFO2)
