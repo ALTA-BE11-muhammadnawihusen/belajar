@@ -18,18 +18,22 @@ func (s *Person) getPropertyInfo() {
 	var reflectValue = reflect.ValueOf(s)
 	fmt.Println("reflectValue :", reflectValue)
 
+	//akan berjalan jika ini merupakan pointer
 	if reflectValue.Kind() == reflect.Ptr {
 		reflectValue = reflectValue.Elem()
 	}
+
 	fmt.Println("reflectvalue.elem:", reflectValue)
 
+	//akan menghasilkan type yang sesuai dengan strut yang kita buat
 	var reflectType = reflectValue.Type()
-	fmt.Println("reflectvalue.elem:", reflectType)
+	fmt.Println("reflectvalue.type:", reflectType)
 
+	fmt.Println("Number field", reflectValue.NumField())
 	for i := 0; i < reflectValue.NumField(); i++ {
-		fmt.Println("nama      :", reflectType.Field(i).Name)
-		fmt.Println("tipe data :", reflectType.Field(i).Type)
-		fmt.Println("nilai     :", reflectValue.Field(i).Interface())
+		fmt.Println("nama      :", reflectType.Field(i).Name)         // mengembalikan nama property
+		fmt.Println("tipe data :", reflectType.Field(i).Type)         // mengembalikan type data property
+		fmt.Println("nilai     :", reflectValue.Field(i).Interface()) //menunjukkan isi property
 		fmt.Println("")
 	}
 }

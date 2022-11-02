@@ -32,6 +32,8 @@ Type() yang mengembalikan type data dari objek yang bersangkutan dalam bentuk st
 Int() menghasilkan nilai int dari variable number
 String() menghasilkan string
 Float64() menghasilkan float64
+Elem() akan mengambil value yang ada jika reflect.Value merupakan pointer
+NumField() akan mengambil jumlah element yang ada jika merupakan object
 
 jika method yang dipanggil tidak sesuai dengan tipe data yang ada didalam reflect.Value
 maka akan menyebabkan error
