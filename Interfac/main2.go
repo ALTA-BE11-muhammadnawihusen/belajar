@@ -23,3 +23,7 @@ func main() {
 	result3 := len(an.([]int))
 	fmt.Println(result3)
 }
+
+// PENTING
+// Apa yang dimiliki interface{}/any hanyalah semacam tiruan yang ditampilkan
+// untuk menjadikannya asli perlu di lakukan casting sesuai tipe yang di muatnya
