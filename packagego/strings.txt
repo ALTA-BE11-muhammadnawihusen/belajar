@@ -5,5 +5,9 @@ cari tahu berbagai fungsi yang ada di golang
 2. strings.Contains("full", "bagian")
 Inti dari fungsi ini adalah untuk deteksi apakah sebuah substring adalah bagian dari string, jika iya maka akan bernilai true, dan sebaliknya.
 
-3.strings.Split(sebuahstring, "pemisah")
+3. strings.Split(sebuahstring, "pemisah")
 Fungsi ini berguna untuk memisah string menggunakan pemisah yang ditentukan sendiri. Hasilnya adalah array berisikan kumpulan substring.
+
+
+4. strings.TrimSpace()
+Fungsi ini digunakan untuk menghilangkan karakter spasi sebelum dan sesudah string. Ini dibutuhkan karena user bisa saja menginputkan spasi lalu enter.

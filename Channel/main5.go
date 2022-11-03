@@ -35,7 +35,6 @@ func main() {
 }
 
 /*
-
 Kondisi case <-time.After(time.Second * 5):, akan terpenuhi ketika tidak ada
 aktivitas penerimaan data dari channel dalam durasi 5 detik.
 Blok inilah yang kita sebut sebagai blok timeout.

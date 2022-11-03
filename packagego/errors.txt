@@ -1,0 +1,2 @@
+1. errors.New
+fungsi ini digunakan untuk membuat objek errors

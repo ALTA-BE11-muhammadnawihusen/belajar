@@ -1,0 +1,4 @@
+1. os.Exit(someint)
+
+Exit digunakan untuk menghentikan program secara paksa pada saat itu juga
+Semua statement setelah exit tidak akan dieksekusi, termasuk juga defer.
