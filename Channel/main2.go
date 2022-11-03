@@ -31,7 +31,7 @@ import (
 // }
 
 func main() {
-	channel := make(chan string)
+	channel := make(chan string, 2)
 	defer close(channel)
 
 	go func(pesan string) {
