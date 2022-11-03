@@ -42,7 +42,6 @@ func main() {
 
 	go masuk(chanel, "Hello I am Nawi Husen")
 	go masuk(chanel, "Hello I am Jack")
-
 	// test2 := <-chanel
 	// fmt.Println(<-chanel)
 	// fmt.Println(<-chanel)
