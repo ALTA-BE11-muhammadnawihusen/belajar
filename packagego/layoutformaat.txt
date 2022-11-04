@@ -1,0 +1,48 @@
+1. %b
+di gunakan untuk memformat data numerik  menjadi bentuk string numerik 2 biner
+
+2. %c
+Digunakan untuk memformat data numerik yang merupakan kode unicode, menjadi bentuk string karakter unicode-nya.
+
+3. %d
+Digunakan untuk memformat data numerik, menjadi bentuk string numerik berbasis 10 (basis bilangan yang kita gunakan).
+
+4. %e atau %e
+Digunakan untuk memformat data numerik desimal ke dalam bentuk notasi numerik standar Scientific notation.
+
+5. %f atau %f (%.f[0.1], %.2f[0,11], %.3f[0,111]......)
+%F adalah alias dari %f. Keduanya memiliki fungsi yang sama.
+Berfungsi untuk memformat data numerik desimal, dengan lebar desimal bisa ditentukan. 
+Secara default lebar digit desimal adalah 6 digit.
+
+6. %o
+Digunakan untuk memformat data numerik, menjadi bentuk string numerik berbasis 8 (oktal)
+
+7. %p
+Digunakan untuk memformat data pointer, mengembalikan alamat pointer referensi variabel-nya.
+Alamat pointer dituliskan dalam bentuk numerik berbasis 16 dengan prefix 0x.
+
+8. %q
+Digunakan untuk escape string. Meskipun string yang dipakai menggunakan literal \ akan tetap di-escape.
+(masih kada paham)
+
+9. %s
+Digunakan untuk memformat data string.
+
+10. %t
+Digunakan untuk memformat data boolean, menampilkan nilai bool-nya.
+
+11. %T
+Berfungsi untuk mengambil tipe variabel yang akan diformat.
+
+12. %v
+Digunakan untuk memformat data apa saja (termasuk data bertipe interface{}). Hasil kembaliannya adalah string nilai data aslinya.
+
+13. %+v
+Digunakan untuk memformat struct, mengembalikan nama tiap property dan nilainya berurutan sesuai dengan struktur struct.
+
+14. %#v
+Digunakan untuk memformat struct, mengembalikan nama dan nilai tiap property sesuai dengan struktur struct dan juga bagaimana objek tersebut dideklarasikan.
+
+15 %%
+Cara untuk menulis karakter % pada string format.
