@@ -1,0 +1,15 @@
+1. rang.Seed()
+digunakan untuk penentuan nilai seed. 
+
+2. rand.Int() 
+digunakan untuk generate angka random dalam bentuk numerik bertipe int.Fungsi rand.Int() ini setiap kali dipanggil akan 
+menghasilkan angka berbeda, tapi pasti hasilnya akan selalu tetap jika mengacu ke deret.
+
+3. rand.Float32()
+menghasilkan angka random bertipe float32. 
+
+4. rand.Uint32() 
+menghasilkan angka random bertipe unsigned int
+
+5. rand.Intn(n)
+menggenerate angka random dengan batas n   
