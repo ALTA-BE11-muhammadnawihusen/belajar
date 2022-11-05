@@ -1,0 +1,15 @@
+1. time.Now()
+Menjadikan informasi waktu sekarang sebagai objek time.time
+
+2. time.Date()
+membuat objek baru bertipe time.Time dengan informasi ditentukan sendiri.
+
+3. time.Local()
+mengambil format waktu local UTC+?
+
+4. time.UTC
+mengambil format UTC
+
+
+beberapa method yang bisa membantu
+
