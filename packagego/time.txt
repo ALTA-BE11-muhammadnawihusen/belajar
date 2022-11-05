@@ -13,3 +13,39 @@ mengambil format UTC
 
 beberapa method yang bisa membantu
 
+1. time.Sleep()
+Fungsi ini digunakan untuk menghentikan program sejenak. bersifat blocking, 
+statement di bawahnya tidak akan dieksekusi sampai pemberhentian usai.
+
+2. time.NewTimer()
+Fungsi mengembalikan objek bertipe *time.Timer yang memiliki property C yang bertipe channel.
+Cara kerja fungsi ini: setelah jeda waktu yang ditentukan sebuah data akan dikirimkan lewat channel C. 
+Penggunaan fungsi ini harus diikuti dengan statement untuk penerimaan data dari channel C.
+
+3. time.AfterFunc()
+Fungsi memiliki 2 parameter. Parameter pertama adalah durasi timer, dan parameter kedua adalah callback nya. 
+Callback tersebut akan dieksekusi jika waktu sudah memenuhi durasi timer.
+- Jika tidak ada serah terima data lewat channel, maka eksekusi time.AfterFunc() adalah asynchronous (tidak blocking).
+- Jika ada serah terima data lewat channel, maka fungsi akan tetap berjalan asynchronous hingga baris kode di mana 
+  penerimaan data channel dilakukan. Proses blocking nya berada pada baris kode penerimaan channel.
+
+4. timer.After()
+Kegunaan fungsi ini mirip seperti time.Sleep(). Perbedaannya adalah, fungsi  akan mengembalikan data channel,
+sehingga perlu menggunakan tanda <- dalam penerapan
+
+5. (time.Time).Sub(time.Time)
+digunakan untuk mencari selisih waktu diantara dua time.Time time.Time
+
+
+
+TIME DURATION
+
+1. time.Since().  
+Cara menghitung durasi bisa menggunakan  Isi argumen fungsi tersebut dengan variabel bertipe waktu,
+maka durasi antara waktu pada argument vs ketika statement time.Since() akan dihitung.
+
+method time duration 
+
+1. .Second
+2. .Minute
+3. .Hour
