@@ -1,0 +1,5 @@
+Variabel hasil dari sha1.New() adalah objek bertipe hash.Hash, memiliki dua buah method Write() dan Sum().
+
+Method Write() digunakan untuk menge-set data yang akan di-hash. Data harus dalam bentuk []byte.
+Method Sum() digunakan untuk eksekusi proses hash, menghasilkan data yang sudah di-hash dalam bentuk []byte. Method ini membutuhkan sebuah parameter, isi dengan nil.
+Untuk mengambil bentuk heksadesimal string dari data yang sudah di-hash, bisa memanfaatkan fungsi fmt.Sprintf dengan layout format %x.
