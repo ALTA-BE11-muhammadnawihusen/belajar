@@ -1,0 +1,24 @@
+1. strconv.Atoi()
+Fungsi ini digunakan untuk konversi data dari tipe string ke int, 
+strconv.Atoi() menghasilkan 2 buah nilai kembalian, yaitu hasil konversi dan error
+
+2. strconv.Itoa()
+Merupakan kebalikan dari strconv.Atoi, berguna untuk konversi int ke string
+
+3. strconv.ParseInt()
+Digunakan untuk konversi string berbentuk numerik dengan basis tertentu ke tipe numerik non-desimal dengan lebar data bisa ditentukan.
+
+4. strconv.FormatInt()
+Berguna untuk konversi data numerik int64 ke string dengan basis numerik bisa ditentukan sendiri.
+
+5. strconv.ParseFloat(someint, 32/64)
+Digunakan untuk konversi string ke numerik desimal dengan lebar data bisa ditentukan.
+
+6. strconv.FormatFloat(somenum, 'f', panjangbelakangkoma, 32/64)
+Berguna untuk konversi data bertipe float64 ke string dengan format eksponen, lebar digit desimal, dan lebar tipe data bisa ditentukan.
+
+7. strconv.ParseBool()
+Digunakan untuk konversi string ke bool.
+
+8. strconv.FormatBool()
+Digunakan untuk konversi bool ke string.

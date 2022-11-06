@@ -1,6 +1,8 @@
 cari tahu berbagai fungsi yang ada di golang
 
 1. strings.Join()
+Memiliki kegunaan berkebalikan dengan strings.Split(). Digunakan untuk menggabungkan slice string (parameter pertama) menjadi 
+sebuah string dengan pemisah tertentu (parameter kedua)
 
 2. strings.Contains("full", "bagian")
 Inti dari fungsi ini adalah untuk deteksi apakah sebuah substring adalah bagian dari string, jika iya maka akan bernilai true, dan sebaliknya.
@@ -11,3 +13,32 @@ Fungsi ini berguna untuk memisah string menggunakan pemisah yang ditentukan send
 
 4. strings.TrimSpace()
 Fungsi ini digunakan untuk menghilangkan karakter spasi sebelum dan sesudah string. Ini dibutuhkan karena user bisa saja menginputkan spasi lalu enter.
+
+5. strings.HasPrefix()
+Digunakan untuk deteksi apakah sebuah string (parameter pertama) diawali string tertentu (parameter kedua).
+
+6. strings.HasSuffix()
+Digunakan untuk deteksi apakah sebuah string (parameter pertama) diakhiri string tertentu (parameter kedua).
+
+7. strings.Count()
+Memiliki kegunaan untuk menghitung jumlah karakter tertentu (parameter kedua) dari sebuah string (parameter pertama). 
+Nilai kembalian fungsi ini adalah jumlah karakternya. besifat case sensitif
+
+8. strings.Index()
+Digunakan untuk mencari posisi indeks sebuah string (parameter kedua) dalam string (parameter pertama).
+jika ada lebih dari satu huruf maka akan ditunjukkan letak index huruf pertama
+
+9. strings.Replace()
+Fungsi ini digunakan untuk replace atau mengganti bagian dari string dengan string tertentu. 
+Jumlah substring yang di-replace bisa ditentukan, apakah hanya 1 string pertama, 2 string, atau seluruhnya.
+- kita bisa menentukan banyak jumlah yang akan di replace pada sebuah string dengan menunjukkan jumlah yang diinginkan 
+- kita bisa menggunakan -1 untuk menggannti semuanya
+
+10. strings.Repeat()
+Digunakan untuk mengulang string (parameter pertama) sebanyak data yang ditentukan (parameter kedua).
+
+11. strings.ToLower()
+Mengubah huruf-huruf string menjadi huruf kecil.
+
+12. strings.ToUpper()
+Mengubah huruf-huruf string menjadi huruf besar.
