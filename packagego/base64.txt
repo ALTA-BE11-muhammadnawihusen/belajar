@@ -1,0 +1,11 @@
+1. EncodeToString()  
+Fungsi EncodeToString() digunakan untuk encode data dari bentuk string ke base64.
+
+2. DecodeString()
+ Fungsi DecodeString() melakukan kebalikan dari EncodeToString()
+
+ Encode() & Decode()
+Kedua fungsi ini kegunaannya sama dengan fungsi yang sebelumnya kita bahas, salah satu pembedanya adalah data yang 
+akan dikonversi dan hasilnya bertipe []byte. Penggunaan cara ini cukup panjang karena variabel penyimpan hasil encode 
+maupun decode harus disiapkan terlebih dahulu, dan harus memiliki lebar data sesuai dengan hasil yang akan ditampung 
+(yang nilainya bisa dicari menggunakan fungsi EncodedLen() dan DecodedLen()).
