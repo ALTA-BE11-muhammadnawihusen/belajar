@@ -1,0 +1,32 @@
+1. regexp.Compile()
+Fungsi digunakan untuk mengkompilasi ekspresi regex. 
+Fungsi tersebut mengembalikan objek bertipe regexp.*Regexp.
+
+
+
+
+
+
+method regex
+1. FindAllString(), 
+berfungsi untuk mencari semua string yang sesuai dengan ekspresi regex, dengan kembalian berupa slice string.
+pemisahnya adalah apa yang tidak mencakup bagian dari regex
+
+2. MatchString()
+Method ini digunakan untuk mendeteksi apakah string memenuhi sebuah pola regexp.
+
+3. FindString()
+Digunakan untuk mencari string yang memenuhi kriteria regexp yang telah ditentukan
+
+4. FindStringIndex()
+Digunakan untuk mencari index string kembalian hasil dari operasi regexp.
+
+5. ReplaceAllString()
+Berguna untuk me-replace semua string yang memenuhi kriteri regexp, dengan string lain.
+
+6. ReplaceAllStringFunc()
+Digunakan untuk me-replace semua string yang memenuhi kriteri regexp, 
+dengan kondisi yang bisa ditentukan untuk setiap substring yang akan di replace.
+
+7. Split()
+Digunakan untuk memisah string dengan pemisah adalah substring yang memenuhi kriteria regexp yang telah ditentukan.
