@@ -39,4 +39,10 @@ func main() {
 	tim := date3.Minute()
 	fmt.Println(tim)
 
+	fmt.Println("=====================")
+	layout := "03-02-2006"
+	values := "07-11-2022"
+	date4, _ := time.Parse(layout, values)
+	fmt.Println(date4)
+
 }
