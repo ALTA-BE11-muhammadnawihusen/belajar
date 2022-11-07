@@ -23,4 +23,7 @@ func main() {
 
 	t := runtime.GOOS // mengembalikan sistem operasi yang digunakan dalam bentuk string
 	fmt.Println(t)
+
+	// tes, _ := exec.Command("mkdir", "File").Output()
+	// fmt.Println(tes) akan membut file
 }

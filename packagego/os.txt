@@ -2,3 +2,29 @@
 
 Exit digunakan untuk menghentikan program secara paksa pada saat itu juga
 Semua statement setelah exit tidak akan dieksekusi, termasuk juga defer.
+
+2. os.Create() 
+Pembuatan file di Go sangatlah mudah, cukup dengan memanggil fungsi ini 
+lalu memasukkan path file yang ingin dibuat sebagai parameter.
+Fungsi os.Create() digunakan untuk membuat file pada path tertentu. 
+Fungsi ini mengembalikan objek *os.File dari file yang bersangkutan. 
+File yang baru terbuat statusnya adalah otomatis open, maka dari itu perlu 
+untuk di-close menggunakan method file.Close() setelah file tidak digunakan lagi.
+
+3. os.IsNotExist() 
+untuk mendeteksi apakah file sudah dibuat atau belum.
+
+4. os.Stat()
+Fungsi ini mengembalikan 2 data, yaitu informasi tetang path yang dicari, dan error (jika ada). 
+Masukkan error kembalian fungsi tersebut sebagai parameter fungsi os.IsNotExist(), 
+untuk mendeteksi apakah file yang akan dibuat sudah ada. Jika belum ada, maka fungsi tersebut akan mengembalikan nilai true.
+
+5. WriteString()
+ Setelah mendapatkan objek file-nya, gunakan method ini untuk pengisian data. 
+ Terakhir panggil method Sync() untuk menyimpan perubahan.
+
+ 
+Variabel text disiapkan bertipe slice []byte dengan alokasi elemen 1024. Variabel tersebut bertugas menampung 
+data hasil statement file.Read(). Proses pembacaan file akan dilakukan terus menerus, berurutan dari baris 
+pertama hingga akhir.
+
