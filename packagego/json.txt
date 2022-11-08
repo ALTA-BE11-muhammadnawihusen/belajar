@@ -1,0 +1,5 @@
+1. json.Unmarshal
+Dengan menggunakan ini, json string bisa dikonversi menjadi bentuk objek, 
+entah itu dalam bentuk map[string]interface{} ataupun objek struct.
+Fungsi unmarshal hanya menerima data json dalam bentuk []byte, maka dari itu data 
+json string pada kode di atas di-casting terlebih dahulu ke tipe []byte sebelum dipergunakan pada fungsi unmarshal.

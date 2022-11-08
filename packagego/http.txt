@@ -15,3 +15,9 @@ Di Go, 1 web aplikasi adalah 1 buah server berbed
 Fungsi ini digunakan untuk parsing template, mengembalikan 2 data yaitu 
 instance template-nya dan error (jika ada). Pemanggilan method Execute() akan membuat hasil parsing 
 template ditampilkan ke layar web browser.
+
+
+Fungsi url.Parse() digunakan untuk parsing string ke bentuk url.
+Mengembalikan 2 data, variabel objek bertipe url.URL dan error (jika ada). 
+Lewat variabel objek tersebut pengaksesan informasi url akan menjadi lebih mudah,
+ contohnya seperti nama host bisa didapatkan lewat u.Host, protokol lewat u.Scheme, dan lainnya.
