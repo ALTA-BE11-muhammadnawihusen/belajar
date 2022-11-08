@@ -1,0 +1,17 @@
+1. http.HandleFunc()
+Fungsi ini digunakan untuk routing aplikasi web. Maksud dari routing adalah penentuan aksi 
+ketika url tertentu diakses oleh user.
+
+2. http.HandleFunc()
+Fungsi ini memiliki 2 buah parameter yang harus diisi. Parameter pertama adalah rute yang diinginkan. 
+Parameter kedua adalah callback atau aksi ketika rute tersebut diakses. 
+Callback tersebut bertipe fungsi func(w http.ResponseWriter, r *http.Request)
+
+3. http.listenAndServe()
+Fungsi ini digunakan untuk menghidupkan server sekaligus menjalankan aplikasi menggunakan server tersebut.
+Di Go, 1 web aplikasi adalah 1 buah server berbed
+
+4. template.ParseFiles()
+Fungsi ini digunakan untuk parsing template, mengembalikan 2 data yaitu 
+instance template-nya dan error (jika ada). Pemanggilan method Execute() akan membuat hasil parsing 
+template ditampilkan ke layar web browser.

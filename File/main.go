@@ -97,7 +97,7 @@ func main() {
 	// var isi string
 	//jika ingin panjang jangan gunakan scan karena scan hanya akan mengambil satu kata
 	// fmt.Scan(&isi)
-	MakeFile(Path + "/File/mai.txt") // membuat file
+	MakeFile(Path + "/web/temp.html") // membuat file
 	// readwrite(Path+"/File/main.txt", isi) menambahkan isi file
 	// readonly(Path + "/File/main.txt") read file
 	// delete(Path + "/File/mai.txt") delete file
