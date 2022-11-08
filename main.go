@@ -38,3 +38,4 @@ func main() {
 // }
 
 //tamabahan gasan add
+//gasan aku sorang
